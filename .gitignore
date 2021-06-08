@@ -1,13 +1,7 @@
 /node_modules
-/coverage
-/cli
-/lib
-/peers
-/example
 .vscode
-tailwind.config.js
-index.html
 yarn.lock
+package-lock.json
 yarn-error.log
 
 # Perf related files

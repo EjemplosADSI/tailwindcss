@@ -9,7 +9,8 @@
   "main": "index2.html",
   "devDependencies": {},
   "scripts": {
-    "build:css": "postcss src/style.css -o dist/tailwind.css"
+    "build": "postcss src/style.css -o dist/tailwind.css",
+    "watch": "postcss src/style.css -o dist/tailwind.css --watch"
   },
   "repository": {
     "type": "git",

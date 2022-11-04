@@ -1,27 +1,5 @@
 {
-  "dependencies": {
-    "autoprefixer": "^10.2.6",
-    "postcss": "^8.3.0",
-    "tailwindcss": "^2.1.4"
-  },
-  "name": "tailwindcss",
-  "version": "1.0.0",
-  "main": "index2.html",
-  "devDependencies": {},
-  "scripts": {
-    "build": "postcss src/style.css -o dist/tailwind.css",
-    "watch": "postcss src/style.css -o dist/tailwind.css --watch"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/EjemplosADSI/tailwindcss.git"
-  },
-  "keywords": [],
-  "author": "Diego Alonso Ojeda Medina",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/EjemplosADSI/tailwindcss/issues"
-  },
-  "homepage": "https://github.com/EjemplosADSI/tailwindcss#readme",
-  "description": "Ejemplo del Uso de Tailwind Css"
+  "devDependencies": {
+    "tailwindcss": "^3.2.1"
+  }
 }

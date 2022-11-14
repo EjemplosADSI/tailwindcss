@@ -36,7 +36,12 @@ module.exports = {
 
       },
       textColor: {
-        'principal': '#CC2D4A',
+        'primary': '#CC2D4A',
+        'secondary': '#8FA206',
+        'tertiary': '#61AEC9',
+      },
+      ringColor:{
+        'primary': '#CC2D4A',
         'secondary': '#8FA206',
         'tertiary': '#61AEC9',
       },
@@ -50,5 +55,6 @@ module.exports = {
     require('@tailwindcss/forms'),
     require('@tailwindcss/typography'),
     require('@tailwindcss/aspect-ratio'),
+    require('tailwind-scrollbar-hide'),
   ],
 }

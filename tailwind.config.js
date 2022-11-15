@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+import icon_heart from "./public/svg/heart.svg"
+
 module.exports = {
   content: ["*.{html,js}","./public/*.{html,js}", "./src/**/*.{html,js}"],
   theme: {
@@ -33,7 +35,6 @@ module.exports = {
         'chicago': "url('../img/chicago.jpg')",
         'europe': "url('../img/europe.jpg')",
         'iceland': "url('../img/iceland.jpg')",
-
       },
       textColor: {
         'primary': '#CC2D4A',

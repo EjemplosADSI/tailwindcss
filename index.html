@@ -8,12 +8,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <title>Viajes platzi</title>
 </head>
 <body>
     <nav></nav>
-    <div id="tab_bar"></div>
-    <section class="w-full h-screen">
+    <section class="w-full h-auto">
         <div id="home">
             <div class="w-full h-3/4">
                 <div class="w-full h-full flex flex-col absolute space-y-96 py-4 items-center">
@@ -71,8 +71,62 @@
                 </div>
             </div>
         </div>
-        <div id="faq"></div>
+        <div class="w-full h-full px-6" id="faqs">
+            <div class="w-full h-full flex flex-col space-y-4">
+                <p class="text-3xl text-primary font-semibold mt-6">FAQs</p>
+                <div>
+                    <p class="text-xl font-semibold text-primary">Política de Cancelación</p>
+                    <p class="font-medium pt-2">Para estancias menores a una semana es importante avisar con 3 días de anticipación, de caso contario será sancionado.</p>
+                </div>
+                <div>
+                    <p class="text-xl font-semibold text-primary">Métodos de pago</p>
+                    <p class="font-medium pt-2">Aceptamos distintos métodos de pago: VISA, MasterCard, American Express, Paypal y Binance.</p>
+                </div>
+                <div>
+                    <p class="text-xl font-semibold text-primary">Mascotas</p>
+                    <p class="font-medium pt-2">El tema de las mascotas dependerá directamente del anfitrión.</p>
+                </div>
+                <div>
+                    <p class="text-xl font-semibold text-primary">Información de Seguridad</p>
+                    <p class="font-medium pt-2">Todas nuestras estancias cuentan con seguro en caso de accidentes.</p>
+                </div>
+                <div>
+                    <p class="text-xl font-semibold text-primary">Estancias Largas</p>
+                    <p class="font-medium pt-2">Contamos con estancias de hasta 3 meses, en este caso es requerido un anticipo con un monto del 50% del valor de la renta.</p>
+                </div>
+            </div>
+        </div>
     </section>
-    <footer></footer>
+	<div class="w-full h-16 bg-white fixed left-0 bottom-0 shadow-md flex space-x-8 items-center justify-center dark:bg-gray-800 lg:hidden">
+        <a href="#home">
+            <svg width="30" height="30" class="fill-current text-gray-200 dark:text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path></svg>
+		</a>
+		<a href="#rentas_destacadas">
+            <svg width="30" height="30" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+		</a>
+		<a href="#recomendados">
+			<svg width="30" height="30" class="fill-current text-gray-600 dark:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+		</a>
+		<button id="toggle-sm">
+            <svg width="30" height="30" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path class="fill-cyan-500 hover:fill-cyan-700" d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+		</button>
+		<svg width="30" height="30" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path class="fill-current text-gray-200 dark:text-white"fill-rule="evenodd" clip-rule="evenodd" d="M10 9C10.7956 9 11.5587 8.68393 12.1213 8.12132C12.6839 7.55871 13 6.79565 13 6C13 5.20435 12.6839 4.44129 12.1213 3.87868C11.5587 3.31607 10.7956 3 10 3C9.20435 3 8.44129 3.31607 7.87868 3.87868C7.31607 4.44129 7 5.20435 7 6C7 6.79565 7.31607 7.55871 7.87868 8.12132C8.44129 8.68393 9.20435 9 10 9ZM3 18C3 17.0807 3.18106 16.1705 3.53284 15.3212C3.88463 14.4719 4.40024 13.7003 5.05025 13.0503C5.70026 12.4002 6.47194 11.8846 7.32122 11.5328C8.1705 11.1811 9.08075 11 10 11C10.9193 11 11.8295 11.1811 12.6788 11.5328C13.5281 11.8846 14.2997 12.4002 14.9497 13.0503C15.5998 13.7003 16.1154 14.4719 16.4672 15.3212C16.8189 16.1705 17 17.0807 17 18H3Z" fill="#3F3F46"/></svg>
+	</div>
+    <footer class="w-full h-auto bg-gray-50 px-6 space-y-2 mt-6 pt-4 text-gray-300">
+        <h2 class="text-lg">Acerca de</h2>
+        <ul class="text-sm">
+            <li>Inversionistas</li>
+            <li>Empleos</li>
+            <li>Términos y Condiciones</li>
+            <li>Platzi Travel, Inc.</li>
+            <li>Follow Us
+                <ul class="text-xl flex space-x-2">
+                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                </ul>
+            </li>
+        </ul>
+    </footer>
+
 </body>
 </html>

@@ -1,6 +1,4 @@
 /** @type {import('tailwindcss').Config} */
-import icon_heart from "./public/svg/heart.svg"
-
 module.exports = {
   content: ["*.{html,js}","./public/*.{html,js}", "./src/**/*.{html,js}"],
   theme: {
